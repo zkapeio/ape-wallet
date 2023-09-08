@@ -1,0 +1,31 @@
+name: nunuwallet
+
+plugins:
+  - name: vyper
+  - name: solidity
+  - name: alchemy
+  - name: etherscan
+  - name: hardhat
+  - name: foundry
+
+default_ecosystem: ethereum
+
+ethereum:
+  default_network: mainnet-fork
+  mainnet_fork:
+    default_provider: hardhat
+    transaction_acceptance_timeout: 99999999
+  mainnet:
+    transaction_acceptance_timeout: 99999999
+
+hardhat:
+  port: auto
+  fork:
+    ethereum:
+      mainnet:
+        upstream_provider: alchemy
+        enable_hardhat_deployments: true
+
+test:
+  mnemonic: test test test test test test test test test test test junk
+  number_of_accounts: 5
