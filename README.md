@@ -1,4 +1,4 @@
-# Ape Wallet contracts
+# Ape Wallet Contracts
 Vyper contracts used in Ape Wallet.
 
 ## Overview
