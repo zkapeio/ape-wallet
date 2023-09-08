@@ -1,4 +1,4 @@
-name: nunuwallet
+name: apewallet
 
 plugins:
   - name: vyper
