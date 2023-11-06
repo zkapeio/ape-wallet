@@ -1,0 +1,81 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "_sender",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "_data",
+				"type": "bytes"
+			}
+		],
+		"name": "Received",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "implementation",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "_library",
+				"type": "address"
+			}
+		],
+		"name": "initialize",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"stateMutability": "payable",
+		"type": "fallback"
+	},
+	{
+		"inputs": [],
+		"name": "library",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "initialized",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

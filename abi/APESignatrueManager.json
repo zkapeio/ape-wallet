@@ -1,0 +1,91 @@
+[
+	{
+		"inputs": [],
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"name": "signer",
+				"type": "address"
+			},
+			{
+				"name": "hash",
+				"type": "bytes32"
+			},
+			{
+				"name": "signature",
+				"type": "bytes"
+			}
+		],
+		"name": "is_valid_signature_now",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "signer",
+				"type": "address"
+			},
+			{
+				"name": "hash",
+				"type": "bytes32"
+			},
+			{
+				"name": "signature",
+				"type": "bytes"
+			}
+		],
+		"name": "is_valid_ERC1271_signature_now",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"name": "_hash",
+				"type": "bytes32"
+			},
+			{
+				"name": "_signature",
+				"type": "bytes"
+			}
+		],
+		"name": "recover_sig",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "IERC1271_ISVALIDSIGNATURE_SELECTOR",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bytes4"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
